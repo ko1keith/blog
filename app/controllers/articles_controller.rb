@@ -9,11 +9,14 @@ class ArticlesController < ApplicationController
     end
 
     def new
-
     end
 
     def create 
-        render plain: params[:article]
+        #white list article params
+        #require top level key of article and only permit title and description parameters
+        @article = Article.new(params.require(:article).permit(:title, :description))
+        @article.save
+        redirect_to article_path(@article)
     end
     
 
