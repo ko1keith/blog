@@ -9,14 +9,23 @@ class ArticlesController < ApplicationController
     end
 
     def new
+        #for first time page loads
+        @article = Article.new
     end
 
     def create 
         #white list article params
         #require top level key of article and only permit title and description parameters
         @article = Article.new(params.require(:article).permit(:title, :description))
-        @article.save
-        redirect_to article_path(@article)
+        
+        #if validation fails, display error message
+        if @article.save
+            flash[:notice] = "Article was created successfully."
+            redirect_to article_path(@article)
+            
+        else
+            render 'new'
+        end
     end
     
 
