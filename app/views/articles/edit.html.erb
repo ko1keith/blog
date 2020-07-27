@@ -1,4 +1,4 @@
-<h1>Create a new Article</h1>
+<h1>Edit article</h1>
 
 <%#if there are any errors, display them%>
 <% if @article.errors.any?%>
@@ -10,8 +10,8 @@
     </ul>
 <% end %>
 
-<%# form with title and description submition%>
-<%= form_with scope: :article, url:articles_path, local:true do |f| %>
+<%# model: @article, local: true to display existing article%>
+<%= form_with(model: @article, local: true) do |f| %>
     <p>
         <%=f.label :title %><br/>
         <%=f.text_field :title %>
