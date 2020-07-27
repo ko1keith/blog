@@ -16,23 +16,6 @@ class ArticlesController < ApplicationController
         @article = Article.new
     end
 
-    #find article and display the form
-    def edit
-        @article = Article.find(params[:id])
-    end
-
-    #take edited form and update to database
-    def update 
-        @article = Article.find(params[:id])
-        if @article.update(params.require(:article).permit(:title,:description))
-            flash[:notice] = "Article was updated succesfully."
-            redirect_to article_path(@article)
-        else
-            render 'new'
-        end
-    end
-
-
     #take form from new article page, create new article and add to database
     def create 
         #white list article params
@@ -49,7 +32,26 @@ class ArticlesController < ApplicationController
         end
     end
 
+    #find article and display the form
+    def edit
+        @article = Article.find(params[:id])
+    end
 
-    
+    #take edited form and update to database
+    def update 
+        @article = Article.find(params[:id])
+        if @article.update(params.require(:article).permit(:title,:description))
+            flash[:notice] = "Article was updated succesfully."
+            redirect_to article_path(@article)
+        else
+            render 'new'
+        end
+    end
+
+    def destroy 
+        @article = Article.find(params[:id])
+        @article.destroy
+        redirect_to articles_path
+    end
 
 end
