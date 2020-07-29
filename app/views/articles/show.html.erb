@@ -1,19 +1,26 @@
+<h1 class="text-center mt-4"> <%=@article.title %> </h1>
 
-<div class="container article-container">
-
-    <h1>Showing Article Details </h1>
-
-    <p><strong> Title:</strong> <%= @article.title %></p>
-    <p><strong> Description: </strong><%= @article.description %></p>
-
-    <table>
-        <tr>
-            <td><%= link_to 'Edit', edit_article_path(@article.id)%> |</td>
-            <td><%= link_to 'Delete', article_path(@article.id), method: :delete, data: {confirm:"Are you sure?"} %> |</td>
-            <td><%= link_to  "Return to Articles listing", articles_path %></td>
-        </tr>
-    </table>    
-
-
-
+<div class="container mt-3">
+    <div class="row justify-content-md-center">
+        <div class="col-7">
+            <div class="card text-center shadow mb-5 bg-white rounded">
+                <div class="card-header font-italic">
+                    by user_id
+                </div>
+                <div class="card-body mt-4 mb-5">
+                    <div class="card-text text-left"><%= simple_format(@article.description,) %></div>
+                </div>
+                <div class="card-footer text-muted">
+                    <div style="float:left">
+                        <small>Created <%= time_ago_in_words(@article.created_at) %> ago, edited <%= time_ago_in_words(@article.updated_at) %></small>
+                    </div>
+                    <div style="float:right">
+                        <%= link_to  "Edit", edit_article_path(@article.id) %> |
+                        <%= link_to 'Delete', article_path(@article.id), method: :delete, data: {confirm:"Are you sure?"} %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

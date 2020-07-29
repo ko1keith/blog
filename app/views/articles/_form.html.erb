@@ -1,14 +1,9 @@
+<div class="container">
+    <%= render 'shared/errors'%>
+</div>
+
 
 <div class="container article-container  shadow mb-2 bg-white rounded">
-<%#if there are any errors, display them%>
-    <% if @article.errors.any?%>
-        <h2>The following erros prevented the article from being saved</h2>
-        <ul>
-            <% @article.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-        </ul>
-    <% end %>
 
     <%# model: @article, local: true to display existing article%>
     <div class="row justify-content-center">
@@ -37,5 +32,6 @@
 </div>
 
 <div class="row justify-content-center mb-5 mt-3">
-    <%= link_to  "[ Cancel ]", :back %>
+    <%= link_to  "[ Cancel ]", :back %> 
+    <%= link_to '[ Delete ]', article_path(@article.id), method: :delete, data: {confirm:"Are you sure?"} %> 
 </div>
