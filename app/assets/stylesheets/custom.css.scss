@@ -42,10 +42,13 @@ body {
 
 #page-content {
   flex: 1 0 auto;
+  background: rgb(233, 233, 233);
 }
 
 #sticky-footer {
   flex-shrink: none;
 }
 
-/* Other Classes for Page Styling */
+.article-container{
+  background-color: white;
+}
