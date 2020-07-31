@@ -1,0 +1,40 @@
+<div class="container">
+    <%= render 'shared/errors', obj: @user %>
+</div>
+
+
+<div class="container article-container  shadow mb-2 bg-white rounded">
+
+    <%# model: @article, local: true to display existing article%>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <%= form_with(model: @user, local: true) do |f| %>
+                <div class="form-group row mt-3">
+                    <%=f.label :username, class:"col-2 col-form-label" %>
+                    <%=f.text_field :username, class:"col-10 form-control" , placeholder: "Enter a username"%>
+                </div>
+            
+                <div class="form-group row">
+                    <%=f.label :email, class:"col-2 col-form-label"%>
+                    <%=f.email_field :email, class:"col-10 form-control", placeholder:"Enter your email"%>
+                </div>
+
+                <div class="form-group row">
+                    <%=f.label :password, class:"col-2 col-form-label"%>
+                    <%=f.password_field :password, class:"col-10 form-control", placeholder:"Choose a password"%>
+                </div>
+
+
+                <div class="form-group row justify-content-center">
+                    <%= f.submit class:"btn btn-outline-dark btn-lg"%>
+                </div>
+            <% end %>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row justify-content-center mb-5 mt-3">
+    <%= link_to  "[ Cancel and return to articles listing ]", articles_path %> 
+</div>
