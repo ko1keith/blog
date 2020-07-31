@@ -1,9 +1,15 @@
+
 <h1 class="text-center mt-4"><%= @user.username %>'s Profile</h1>
+
 
 <%= gravatar_for(@user, size:200) %>
 
-
 <div class="container mt-3">
+    <div class="row justify-content-md-center">
+        <div class="btn btn-secondary btn-md">
+            <%= link_to  "Edit User Profile", edit_user_path(@user.id), style: 'color:#FFFFFF' %>
+        </div>
+    </div>
     <h2 class="text-center mt-4">Articles</h2>
     <% @user.articles.each do |article| %>
         <div class="row justify-content-md-center">
