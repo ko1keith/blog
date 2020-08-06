@@ -4,7 +4,6 @@
 <%= gravatar_for(@user, size:200) %>
 
 <div class="container mt-3">
-
     <div class="row justify-content-md-center">
         <div class="btn btn-secondary btn-md">
             <%= link_to  "Edit User Profile", edit_user_path(@user.id), style: 'color:#FFFFFF' %>
@@ -12,7 +11,11 @@
     </div>
     <h2 class="text-center mt-4">Articles</h2>
 
-    <% @user.articles.each_slice(3) do |articles| %>
+    <div class="apple_pagination mb-3">
+        <%= will_paginate @articles, :container => false %>
+    </div>
+
+    <% @articles.each_slice(3) do |articles| %>
         <div class="row">
             <% articles.each do |article| %>
                 <div class="col-4 mb-3">
