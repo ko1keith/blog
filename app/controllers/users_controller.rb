@@ -17,7 +17,7 @@ class UsersController < ApplicationController
         
         if(@user.save)
             flash[:notice] = "Welcome to the Blog #{@user.username}, you have successfully signed up!"
-            redirect_to articles_path#user_path(@user)
+            redirect_to user_path(@user)
         else
             render 'new'
         end
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
         if @user.update(user_params)
             flash[:notice] = "User updated successfully."
-            redirect_to users_path
+            redirect_to user_path(@user)
         else
             render 'edit'
         end
