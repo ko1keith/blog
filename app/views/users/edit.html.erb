@@ -1,4 +1,11 @@
-<h1 class="text-center mt-4"> Edit your profile</h1>
+<div class="row justify-content-center">
+        <h1 class="text-center mt-4 "> Edit your profile</h1>
+</div>
+
+<div class="row justify-content-center">
+        <%= link_to  "Delete Account", user_path(current_user),class:"btn btn-dark btn-sm mb-3 text-warning", method: :delete, data: {confirm:"Are you sure?"} %>
+</div>
+
 
 <%= render 'form'%>
 
