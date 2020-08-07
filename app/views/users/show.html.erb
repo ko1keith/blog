@@ -5,9 +5,12 @@
 
 <div class="container mt-3">
     <div class="row justify-content-md-center">
-        <div class="btn btn-secondary btn-md">
-            <%= link_to  "Edit User Profile", edit_user_path(@user.id), style: 'color:#FFFFFF' %>
-        </div>
+        <% if logged_in? && @user == current_user %>
+            <div class="btn btn-secondary btn-md">
+                <%= link_to  "Edit User Profile", edit_user_path(@user.id), style: 'color:#FFFFFF' %>
+            </div>
+        <% end %>
+
     </div>
     <h2 class="text-center mt-4">Articles</h2>
 

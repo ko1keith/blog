@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
     def show 
         
-        @articles = @user.articles.paginate(page: params[:page], per_page:9)
+        @articles = @user.articles.paginate(page: params[:page], per_page:9).order(created_at: :desc)
     end
 
     def new
