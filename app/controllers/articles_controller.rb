@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 
     #display all articles from database
     def index 
-        @articles = Article.paginate(page: params[:page], per_page:9)
+        @articles = Article.paginate(page: params[:page], per_page:9).order(created_at: :desc)
     end
 
     #display new article page
@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
         #white list article params
         #require top level key of article and only permit title and description parameters
         @article = Article.new(article_params)
-        @article.user = User.first
+        @article.user = current_user
         
         #if validation fails, display error message
         if @article.save
