@@ -14,7 +14,7 @@
                     <div style="float:left">
                         <small>Created <%= time_ago_in_words(@article.created_at) %> ago, edited <%= time_ago_in_words(@article.updated_at) %></small>
                     </div>
-                    <% if (logged_in? && @article.user == current_user) || (current_user.admin?)%>
+                    <% if logged_in? && (@article.user == current_user || current_user.admin?)%>
                         <div style="float:right">
                             <%= link_to  "Edit", edit_article_path(@article.id), style: 'color:#808080' %> |
                             <%= link_to 'Delete', article_path(@article.id), method: :delete, data: {confirm:"Are you sure?"},style: 'color:#808080' %>

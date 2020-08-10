@@ -20,6 +20,8 @@ class CategoriesController < ApplicationController
     end
 
     def index 
+        @categories = Category.paginate(page: params[:page], per_page:9).order("name ASC")
+        @articles = Article.paginate(page: params[:page], per_page:9).order(created_at: :desc)
     end
 
 
