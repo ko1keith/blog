@@ -16,7 +16,7 @@
                         <% @str = "thumbnails/" + category.name.downcase + ".jpg"%>
                         <%= image_tag @str, class:"card-img-top "  %>
                         <div class="card-body">
-                            <h5 class="card-subtitle thumbnail-text"><%= category.name%></h5>
+                            <h5 class="card-subtitle thumbnail-text"><%= category.name%> (<%= category.articles.size%>)</h5>
                         </div>
 
                     </div>  
