@@ -26,6 +26,9 @@
                         <%= link_to  "", article_path(article.id), class:"stretched-link" %>
                         <div class="card-header font-italic">
                             by <%= article.user.username %>
+                            <% if article.categories.any? %>
+                                    <%= render article.categories %>     
+                            <%end %>
                         </div>
                         <div class="card-body mt-4 mb-5 ">
                             <h5 class="card-title"><%= article.title%></h5>
