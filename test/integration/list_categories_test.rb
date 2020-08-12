@@ -8,8 +8,8 @@ class ListCategoriesTest < ActionDispatch::IntegrationTest
 
   test "should show categories listing" do
     get '/categories'
-    assert_select "h5.card-title", text: @category.name
-    assert_select "h5.card-title", text: @category2.name
+    assert_select "h5.card-subtitle", string: @category.name
+    assert_select "h5.card-subtitle", string: @category2.name
 
   end
 end

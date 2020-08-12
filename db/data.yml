@@ -1,0 +1,299 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2020-07-24 19:30:14.102945'
+    - '2020-07-24 19:30:14.102945'
+
+---
+article_categories:
+  columns:
+  - id
+  - article_id
+  - category_id
+  records: 
+  - - 1
+    - 28
+    - 11
+  - - 2
+    - 17
+    - 11
+  - - 3
+    - 28
+    - 1
+  - - 4
+    - 30
+    - 1
+  - - 5
+    - 30
+    - 2
+  - - 6
+    - 31
+    - 1
+  - - 7
+    - 31
+    - 7
+
+---
+articles:
+  columns:
+  - id
+  - title
+  - description
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 17
+    - liv's first article
+    - liv's first articleliv's first articleliv's first articleliv's first articleliv's
+      first articleliv's first articleliv's first articleliv's first articleliv's
+      first articleliv's first articleliv's first articleliv's first articleliv's
+      first articleliv's first articleliv's first articleliv's first articleliv's
+      first articleliv's first articleliv's first articleliv's first articleliv's
+      first articleliv's first articleliv's first articleliv's first articleliv's
+      first article
+    - '2020-08-07 13:57:25.134176'
+    - '2020-08-07 13:57:25.134176'
+    - 3
+  - - 19
+    - 1st article
+    - 1st article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article1st article1st article1st
+      article1st article1st article1st article1st article
+    - '2020-08-07 19:46:36.959239'
+    - '2020-08-07 19:46:36.959239'
+    - 9
+  - - 20
+    - 2nd article
+    - 2nd article2nd article2nd article2nd article2nd article2nd article2nd article2nd
+      article2nd article2nd article2nd article2nd article2nd article2nd article2nd
+      article2nd article2nd article2nd article2nd article2nd article2nd article2nd
+      article2nd article2nd article2nd article2nd article2nd article2nd article2nd
+      article2nd article2nd article2nd article2nd article2nd article2nd article2nd
+      article2nd article2nd article2nd article2nd article2nd article2nd article2nd
+      article2nd article
+    - '2020-08-07 19:46:49.936733'
+    - '2020-08-07 19:46:49.936733'
+    - 9
+  - - 21
+    - 3rd article
+    - 3rd article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article3rd article3rd
+      article3rd article3rd article3rd article3rd article3rd article
+    - '2020-08-07 19:47:03.902960'
+    - '2020-08-07 19:47:03.902960'
+    - 9
+  - - 22
+    - 4th article
+    - 4th article4th article4th article4th article4th article4th article4th article4th
+      article4th article4th article4th article4th article4th article4th article4th
+      article4th article4th article4th article4th article4th article4th article4th
+      article4th article4th article4th article4th article4th article4th article4th
+      article4th article4th article4th article4th article4th article4th article4th
+      article4th article4th article4th article4th article4th article4th article4th
+      article4th article4th article4th article4th article4th article
+    - '2020-08-07 19:47:16.124808'
+    - '2020-08-07 19:47:16.124808'
+    - 9
+  - - 23
+    - 5th article
+    - 5th article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article5th article5th article5th article5th article5th article5th article5th
+      article
+    - '2020-08-07 19:47:30.000711'
+    - '2020-08-07 19:47:30.000711'
+    - 9
+  - - 24
+    - 6th article
+    - 6th article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article6th article6th
+      article6th article6th article6th article6th article6th article
+    - '2020-08-07 19:47:45.306959'
+    - '2020-08-07 19:47:45.306959'
+    - 9
+  - - 25
+    - 7th article
+    - 7th article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article7th article7th
+      article7th article7th article7th article7th article7th article
+    - '2020-08-07 19:48:00.258985'
+    - '2020-08-07 19:48:00.258985'
+    - 9
+  - - 26
+    - '8th article '
+    - '8th article 8th article 8th article 8th article 8th article 8th article 8th
+      article 8th article 8th article 8th article 8th article 8th article 8th article
+      8th article 8th article 8th article 8th article 8th article 8th article 8th
+      article 8th article 8th article 8th article 8th article 8th article 8th article
+      8th article 8th article 8th article 8th article 8th article 8th article 8th
+      article 8th article 8th article 8th article 8th article 8th article 8th article
+      8th article 8th article 8th article 8th article 8th article 8th article 8th
+      article 8th article 8th article 8th article 8th article 8th article 8th article
+      8th article 8th article '
+    - '2020-08-07 19:48:15.813400'
+    - '2020-08-07 19:48:15.813400'
+    - 9
+  - - 27
+    - 9th article
+    - 9th article9th article9th article9th article9th article9th article9th article9th
+      article9th article9th article9th article9th article9th article9th article9th
+      article9th article9th article9th article9th article9th article9th article9th
+      article9th article9th article9th article9th article9th article9th article9th
+      article9th article9th article9th article9th article9th article9th article9th
+      article9th article9th article9th article9th article9th article9th article
+    - '2020-08-07 19:48:31.224038'
+    - '2020-08-07 19:48:31.224038'
+    - 9
+  - - 28
+    - 10th article
+    - 10th article10th article10th article10th article10th article10th article10th
+      article10th article10th article10th article10th article10th article10th article10th
+      article10th article10th article10th article10th article10th article10th article10th
+      article10th article10th article10th article10th article10th article10th article10th
+      article10th article10th article10th article10th article10th article10th article10th
+      article10th article10th article10th article10th article10th article10th article10th
+      article10th article10th article10th articlev
+    - '2020-08-07 19:48:43.821522'
+    - '2020-08-07 19:48:43.821522'
+    - 9
+  - - 30
+    - some title
+    - some description
+    - '2020-08-11 13:59:45.171290'
+    - '2020-08-11 13:59:45.171290'
+    - 10
+  - - 31
+    - sports article
+    - some description about travel and sports
+    - '2020-08-11 14:14:00.602974'
+    - '2020-08-11 14:14:00.602974'
+    - 9
+
+---
+categories:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Travel
+    - '2020-08-10 14:33:29.794356'
+    - '2020-08-10 14:33:29.794356'
+  - - 2
+    - Sports
+    - '2020-08-10 16:06:43.821824'
+    - '2020-08-10 16:06:43.821824'
+  - - 3
+    - Technology
+    - '2020-08-10 16:07:42.761028'
+    - '2020-08-10 16:07:42.761028'
+  - - 4
+    - Politics
+    - '2020-08-10 16:07:55.337623'
+    - '2020-08-10 16:07:55.337623'
+  - - 5
+    - Gaming
+    - '2020-08-10 16:08:07.816270'
+    - '2020-08-10 16:08:07.816270'
+  - - 6
+    - Healthcare
+    - '2020-08-10 16:08:15.093089'
+    - '2020-08-10 16:08:15.093089'
+  - - 7
+    - Camping
+    - '2020-08-10 16:08:25.024580'
+    - '2020-08-10 16:08:25.024580'
+  - - 8
+    - Shopping
+    - '2020-08-10 16:08:36.718193'
+    - '2020-08-10 16:08:36.718193'
+  - - 9
+    - Self Improvement
+    - '2020-08-10 16:08:52.406567'
+    - '2020-08-10 16:08:52.406567'
+  - - 10
+    - Exercise
+    - '2020-08-10 16:56:25.421391'
+    - '2020-08-10 16:56:25.421391'
+  - - 11
+    - Racing
+    - '2020-08-10 18:34:12.240929'
+    - '2020-08-10 18:34:12.240929'
+
+---
+users:
+  columns:
+  - id
+  - username
+  - email
+  - created_at
+  - updated_at
+  - password_digest
+  - admin
+  records: 
+  - - 3
+    - olivia
+    - olivia@example.com
+    - '2020-07-31 18:35:08.584769'
+    - '2020-07-31 18:35:08.584769'
+    - "$2a$12$5tV.UAWc8.9i7.qHORJ7POWdPwlEiA8M8DsdEHXP9z3IjpdDR1mmW"
+    - false
+  - - 4
+    - chase
+    - chase@example.com
+    - '2020-07-31 18:36:57.309007'
+    - '2020-07-31 18:36:57.309007'
+    - "$2a$12$aZAeh.ERBwwEqcaMDsdbweOOSpZH64cJqXn/n0oztRo95RrHOJgHq"
+    - false
+  - - 9
+    - keith
+    - keith@example.com
+    - '2020-08-07 19:35:03.803903'
+    - '2020-08-07 19:35:26.081593'
+    - "$2a$12$muD4I3wKiEsqGicTIul6N.bLaKbKGmKfc6Li8.tqxr/FbnbplytOG"
+    - true
+  - - 10
+    - jimmy
+    - jimmy@example.com
+    - '2020-08-07 19:49:27.976110'
+    - '2020-08-07 19:49:27.976110'
+    - "$2a$12$RxpFTxSxgSVaUv3QX97H1.U0wGhuYPl7v71SEYOsrdID5eZ77kM3."
+    - false
