@@ -7,5 +7,5 @@
 * Deployed to Heroku: https://keith-blog.herokuapp.com/
 
 Local Installation:
-    * clone repo
-    * $ rails server
+* clone repo
+* $ rails server
