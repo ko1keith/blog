@@ -18,3 +18,5 @@ Local Installation:
 * clone repo
 * $ bundle install
 * $ rails server
+
+![Demo](blog.gif)
